@@ -1,8 +1,7 @@
-import { $, renderSquares, customPlayer } from "/static/tools.js";
+import { $, renderSquares, customPlayer } from "./tools.js";
 const SQUARES = 9;
 let figure = null;
 const socket = io();
-
 //éste método se disparará cuando la conexión se haya establecido
 socket.on("connect", () => {
   //ahora si puedo "escuchar" lo que me manda el servidor
