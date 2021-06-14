@@ -15,4 +15,11 @@ socket.on("connect", () => {
   socket.on("refresh", ({ posicion, figure }) => {
     $(`[data-posicion='${posicion}']`).innerHTML = figure ? "O" : "X";
   });
+  socket.on("winner", (data) => {
+    socket.emit("resetBoard", { reset: true });
+    // console.log(document.querySelectorAll(".square"));
+    document
+      .querySelectorAll(".square")
+      .forEach((item) => (item.innerHTML = ""));
+  });
 });
