@@ -4,7 +4,7 @@ const path = require("path");
 const app = require("./socket_express");
 const http = require("http");
 const server = http.createServer(app);
-const PORT = 3001 || process.env.PORT;
+const PORT = process.env.PORT || 3001;
 //Este middleware nos permite servir archivos estaticos
 /*ESTE MIDDELWARE LO USABA ANTES... HICE UN UPDATE*/
 // app.use("/static", express.static("public"));
