@@ -1,6 +1,14 @@
 import { $, renderSquares, customPlayer } from "./tools.js";
 const SQUARES = 9;
 let figure = null;
+/* trabajar cuadro de diálogo*/
+const showDialog = (tilte, text) => {
+  $("dialog").show();
+  setTimeout(() => $("dialog").close(), 2000);
+};
+
+showDialog();
+
 const socket = io();
 //éste método se disparará cuando la conexión se haya establecido
 socket.on("connect", () => {

@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/index.css">
     <!-- <link rel="stylesheet" href="./public/styles/index.css"> -->
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -38,7 +41,18 @@
         </section>
     </main>
     <footer></footer>
+    <dialog> 
+        <div class="dialog__emoji">
+            <span class="material-icons">sports_esports</span>
 
+        </div>
+        <div class="dialog__info">
+            <h2 class="dialog__title">Atención</h2>
+            <p class="dialog__description">Ingresó un jugador</p>
+        </div>
+        <div class="dialog__close"><span class="dialog__close__caracter">&times;</span></div>
+
+    </dialog>
     <script src="/socket.io/socket.io.js"></script>
     <script src="./main.js" type="module"></script>
 
